@@ -17,6 +17,7 @@ import '../util/more_icon.dart';
 import '../util/text_color.dart';
 import '../widgets/badge.dart';
 import '../widgets/bottom_modal.dart';
+import '../widgets/bottom_safe.dart';
 import '../widgets/fullscreenable_image.dart';
 import '../widgets/info_table_popup.dart';
 import '../widgets/markdown_text.dart';
@@ -497,7 +498,8 @@ class _AboutTab extends StatelessWidget {
               onTap: () =>
                   goToUser.byId(context, mod.instanceHost, mod.moderator.id),
             ),
-        ]
+        ],
+        const BottomSafe(),
       ],
     );
   }
