@@ -444,6 +444,11 @@ class _AboutTab extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 7),
                 child: _Badge('${onlineUsers ?? 'X'} users online'),
               ),
+              _Badge('${community.counts.usersActiveDay} users / day'),
+              _Badge('${community.counts.usersActiveWeek} users / week'),
+              _Badge('${community.counts.usersActiveMonth} users / month'),
+              _Badge(
+                  '${community.counts.usersActiveHalfYear} users / 6 months'),
               _Badge(
                   '''${community.counts.subscribers} subscriber${pluralS(community.counts.subscribers)}'''),
               _Badge(

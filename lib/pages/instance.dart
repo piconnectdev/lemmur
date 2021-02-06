@@ -302,6 +302,13 @@ class _AboutTab extends HookWidget {
                 children: [
                   const SizedBox(width: 7),
                   _Badge('${site.online} users online'),
+                  _Badge('${site.siteView.counts.usersActiveDay} users / day'),
+                  _Badge(
+                      '${site.siteView.counts.usersActiveWeek} users / week'),
+                  _Badge(
+                      '${site.siteView.counts.usersActiveMonth} users / month'),
+                  _Badge(
+                      '${site.siteView.counts.usersActiveHalfYear} users / 6 months'),
                   _Badge('${site.siteView.counts.users} users'),
                   _Badge('${site.siteView.counts.communities} communities'),
                   _Badge('${site.siteView.counts.posts} posts'),
